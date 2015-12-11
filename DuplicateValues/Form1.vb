@@ -7,9 +7,10 @@ Public Class Form1
 
     Private Sub btnInputNumbers_Click(sender As Object, e As EventArgs) Handles btnInputNumbers.Click
         Dim numbers(0) As Integer
-        Me.lstValues.Items.Clear()
         Dim length As Integer = 0
         Dim inputNum As Integer
+
+        Me.lstValues.Items.Clear()
 
         inputNum = Val(InputBox("Please input a number from 1 to 99"))
 
@@ -37,12 +38,13 @@ Public Class Form1
         Next
         Me.lblDuplicate.Text = "Duplicate after " & duplicateIndex & " numbers"
     End Sub
+    '********************************************************************************************
     'Returns the index of the first occurrence of searchItem in
     'dataArray or -1 if searchItem not found.
     '
     'post: Index of the first occurrence of searchItem has been 
     'returned, or -1 has been returned if searchItem not found.
-    '
+    '********************************************************************************************
     Function FindItemIndex(ByRef dataArray() As Integer, _
     ByVal searchItem As Integer) As Integer
         'Empty array
