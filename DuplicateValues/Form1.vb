@@ -35,7 +35,7 @@ Public Class Form1
         For i As Integer = 0 To array.Length - 2
             lstBox.Items.Add(array(i))
         Next
-        Me.lblDuplicate.Text = "Duplicate after " & duplicateIndexx & " numbers"
+        Me.lblDuplicate.Text = "Duplicate after " & duplicateIndex & " numbers"
     End Sub
     'Returns the index of the first occurrence of searchItem in
     'dataArray or -1 if searchItem not found.
